@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<!-- jQuery -->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+	<!-- FontAwesome -->
+	<script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+
+	<title>Alexandr Basan | YouTube</title>
+
+	<link rel="shortcut icon" href="https://static.parastorage.com/client/pfavico.ico" type="image/x-icon">
+
+
+	<!-- Google Tag Manager -->
+	<script>
+		(function(w, d, s, l, i) {
+			w[l] = w[l] || [];
+			w[l].push({
+				'gtm.start': new Date().getTime(),
+				event: 'gtm.js'
+			});
+			var f = d.getElementsByTagName(s)[0],
+				j = d.createElement(s),
+				dl = l != 'dataLayer' ? '&l=' + l : '';
+			j.async = true;
+			j.src =
+				'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+			f.parentNode.insertBefore(j, f);
+		})(window, document, 'script', 'dataLayer', 'GTM-KDTRS2');
+	</script>
+	<!-- End Google Tag Manager -->
+	<style>
+		.title-separator {
+			color: #27C1FE;
+		}
+
+		ul {
+			list-style-type: none;
+			padding-left: 0px;
+		}
+
+		a {
+			text-decoration: none;
+			color: #27C1FE;
+		}
+
+		a:hover {
+			color: #27C1FE;
+			text-decoration: none;
+		}
+
+		.links a {
+			text-transform: uppercase;
+		}
+
+		#switch-lang {
+			font-size: 1.5em;
+		}
+	</style>
+
+</head>
+
+<body>
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KDTRS2"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+
+	<main role="main" class="container">
+		<div class="row">
+			<div class="col-8 col-sm-6">
+
+				<h1 class="mt-5" lang="en">Alexandr<span class='title-separator'>.</span> Basan</h1>
+				<h1 class="mt-5" lang="ru">Alexandr<span class='title-separator'>.</span> Basan</h1>
+
+				<a id="switch-lang"><i class="fas fa-language"></i></a>
+
+				<p class="lead" lang="en">
+					This is the official website of Alexandr Basan. Not entirely sure what purpose a website would serve but have to be in trend. Check these links they give you much more interesting content:
+				</p>
+				<p class="lead" lang="ru">
+					Это мой официальный вебсайт, не думаю что для того что я делаю мне нужен вебсайт, но ведь надо быть в тренде. Вот ссылки на мои аккаунты где вы можете найти гораздо больше всего интересного:
+				</p>
+				<p>
+					<ul>
+						<li class='links'>
+							<a href='https://www.youtube.com/channel/UCueNSzrFD0VzcznZJ8kraqQ' target='_blank'>YouTube</a>
+						</li>
+						<li class='links'>
+							<a href='https://www.facebook.com/alexandr.basan' target='_blank'>Facebook</a>
+						</li>
+						<li class='links'>
+							<a href='https://www.instagram.com/alexandrbasan/' target='_blank'>Instagram</a>
+						</li>
+						<li class='links'>
+							<a href='https://twitter.com/alexandrbasan' target='_blank'>Twitter</a>
+						</li>
+					</ul>
+				</p>
+			</div>
+		</div>
+
+	</main>
+
+	<script>
+		var lang = ["en", "ru"];
+
+		for (i = 0; i < lang.length; i++) {
+			if (lang[i] != navigator.language.substr(0, 2)) {
+				$('[lang="' + lang[i] + '"]').hide();
+			}
+		}
+
+		$('#switch-lang').click(function() {
+			$('[lang="ru"]').toggle();
+			$('[lang="en"]').toggle();
+		});
+	</script>
+
+</body>
+
+</html>
