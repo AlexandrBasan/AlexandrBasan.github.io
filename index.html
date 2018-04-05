@@ -120,10 +120,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				$('[lang="' + lang[i] + '"]').hide();
 			}
 		}
-
 		$('#switch-lang').click(function() {
-			$('[lang="ru"]').toggle();
-			$('[lang="en"]').toggle();
+			for (i = 0; i < lang.length; i++) {
+					$('[lang="' + lang[i] + '"]').toggle();
+			}
 		});
 	</script>
 
