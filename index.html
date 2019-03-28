@@ -145,13 +145,25 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	</main>
 
 	<script>
+		// Check user's browser language
+		var userLang = navigator.language || navigator.userLanguage;
+		userLang = userLang.substr(0, 2)
+		//alert ("The language is: " + userLang);
+
+		// Default language value
+		if (userLang == null){
+    	userLang = 'en'
+		}
+
 		var lang = ["en", "ru"];
 
 		for (i = 0; i < lang.length; i++) {
-			if (lang[i] != navigator.language.substr(0, 2)) {
+			if (lang[i] != userLang) {
 				$('[lang="' + lang[i] + '"]').hide();
 			}
 		}
+
+		// Change language button
 		$('#switch-lang').click(function() {
 			for (i = 0; i < lang.length; i++) {
 					$('[lang="' + lang[i] + '"]').toggle();
